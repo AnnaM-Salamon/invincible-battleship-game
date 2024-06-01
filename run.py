@@ -6,4 +6,20 @@ from random import randint
 
 
         
+class Board:
+    """
+    Main board class. Defines board size 9 rows and columns), the player's name, the number of ships
+    """
+    
+    def __init__(self, size, name, board, ships):
+        self.size = size
+        self.name = name
+        self.board = []
+        for x in range(size):
+            row = []
+            for x in range(size):
+                row.append('-')
+                self.board.append(row)
+            self.ships = []    
+            
         
